@@ -33,7 +33,7 @@ function newGrid() {
         cols = parseInt(cols)
 
         // Create conditional statement that will require an input between 1 and 100
-        if (isNaN(rows) || isNaN(cols) || 100 >= rows <= 1 || 100 >= cols <= 1) {
+        if (isNaN(rows) || isNaN(cols) || 100 >= rows <= 0 || 100 >= cols <= 0) {
             alert("Please enter numbers between 1 and 100 rows and columns.");
             return;
         }
